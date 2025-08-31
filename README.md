@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# 📌 OfficeApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern ekiplerin iletişim ve iş takibini kolaylaştırmak için geliştirilmiş bir **ofis yönetim uygulaması**.
+Uygulama; sohbet kanalları, proje ve görev yönetimi, etkinlik planlama, bildirimler ve ekip üyeleri için profil yönetimi sunar.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Özellikler
 
-### `npm start`
+* **Sohbet ve Kanallar**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  * Genel ve özel kanallar oluşturma
+  * Mesaj gönderme, emoji ile tepki verme
+  * Gerçek zamanlı kanal değişimi
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Proje Yönetimi**
 
-### `npm test`
+  * Proje ekleme ve listeleme
+  * Görev oluşturma, güncelleme ve silme
+  * Görevlerin durumlarını değiştirme (`Tamamlandı`, `Devam Ediyor`, `Beklemede`)
+  * Proje ilerlemesini otomatik hesaplama
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Ekip Yönetimi**
 
-### `npm run build`
+  * Ekip üyeleri listesi
+  * Yeni üye ekleme (isim, rol, e-posta, telefon)
+  * Çevrimiçi/çevrimdışı durum gösterimi
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Etkinlik Takvimi**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Etkinlik ekleme (başlık, tarih, saat, açıklama)
+  * Katılımcı belirleme
+  * Yaklaşan etkinlikleri listeleme
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Kullanıcı Profili**
 
-### `npm run eject`
+  * Profil görüntüleme ve güncelleme
+  * Çalışma durumu ve saat dilimi ayarlama
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **Bildirimler**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * Yeni mesaj ve etkinlikler için bildirim sayacı
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠️ Teknolojiler
 
-## Learn More
+* [React 19](https://react.dev/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [lucide-react](https://lucide.dev/) → ikon seti
+* [React Scripts](https://www.npmjs.com/package/react-scripts)
+* Testing: `@testing-library/react`, `@testing-library/jest-dom`, `@testing-library/user-event`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📦 Kurulum
 
-### Code Splitting
+1. Projeyi klonla:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/kullanici/office-app.git
+cd office-app
+```
 
-### Analyzing the Bundle Size
+2. Gerekli bağımlılıkları yükle:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm install
+```
 
-### Making a Progressive Web App
+3. Geliştirme sunucusunu başlat:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm start
+```
 
-### Advanced Configuration
+4. Tarayıcıda aç:
+   👉 `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📂 Proje Yapısı
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+office-app/
+├── node_modules/          
+├── public/                
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── tailwind.config.js
+```
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📖 Kullanım Senaryoları
+
+* 👨‍💻 **Proje Yöneticisi** → Görev atar, projeleri takip eder, etkinlik planlar.
+* 🎨 **Tasarımcı / Geliştirici** → Sohbet kanallarında iletişim kurar, görev günceller.
+* 📅 **Ekip Üyesi** → Etkinliklere katılır, kendi profilini yönetir.
+
+---
+
+## 🧪 Test Çalıştırma
+
+```bash
+npm test
+```
+
+Testler **React Testing Library** ile yazılmıştır.
+
+---
+
+## 🚀 Build Alma
+
+```bash
+npm run build
+```
+
+Build çıktısı `build/` klasöründe oluşturulur.
+
+---
+
+## 📌 Yol Haritası (Geliştirme Önerileri)
+
+* 🔗 Backend entegrasyonu (ör. Firebase veya Node.js API)
+* 🔔 Gerçek zamanlı bildirimler (WebSocket / Socket.io)
+* 📱 Mobil uyumlu geliştirmeler
+* 🌙 Karanlık mod desteği
+* 🗂️ Proje dosyaları paylaşım alanı
+
+---
+
+## 📜 Lisans
+
+Bu proje MIT lisansı ile sunulmuştur.
